@@ -1,10 +1,3 @@
-# "Express JS Tutorial - User Roles and Permissions"
-
-### Academic Honesty
-
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
-
----
 
 ## Quick Start (refactored)
 

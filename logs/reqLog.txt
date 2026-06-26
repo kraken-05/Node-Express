@@ -17,3 +17,6 @@
 20260606	13:35:57	8bf72163-1dff-4dae-bbf0-83018914c80d	GET	undefined	/employees
 20260606	13:38:08	50ce2f47-c5e9-42dc-a16c-801d6819deb0	GET	undefined	/
 20260606	13:38:08	d28ecae8-532f-49dc-b501-b8264fd0430e	GET	undefined	/employees
+20260625	18:38:28	523ec151-b735-4f13-8005-8a8a97d331d2	POST	undefined	/register
+20260625	19:12:31	657d2327-666a-419f-8527-c6549bdab225	GET	undefined	/
+20260625	19:12:32	a9754d34-bf16-47eb-b0a5-993db7e946cf	GET	undefined	/employees

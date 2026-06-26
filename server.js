@@ -9,10 +9,17 @@ import errorHandler from './middleware/errorHandler.js';
 import verifyJWT from './middleware/verifyJWT.js';
 import cookieParser from 'cookie-parser';
 import credentials from './middleware/credentials.js';
-const PORT = process.env.PORT || 3500;
+import connectDB from './config/dbConn.js';
+import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+const PORT = process.env.PORT || 3500;
+dotenv.config({ path: __dirname + '/.env' });
+
+connectDB();
 
 // custom middleware logger
 app.use(logger);
@@ -66,4 +73,7 @@ app.all('*', (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+mongoose.connection.once('open', () => {
+    console.log('Connected to MongoDB');
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+})
